@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Kalam&family=Neucha&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!--Bootstrap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <img id="bgimg2" src="images/bg2.png">
+            <img id="bgimg" src="images/bg.jpg"> <!--TODO: 1.Remove a note js  2.add animation-->
+            <div id="container">
+                <img id="pushpin3" src="images/pushpins3.png">
+                <img id="pushpin4" src="images/pushpins3.png">
+
+                <div id="page">
+
+                    <h1>My Task Board</h1>
+                    <div id="pushpin1"><img src="images/pushpin-2-52251.png"></div>
+                    <div id="pushpin2"><img src="images/pushpin-2-52251.png"></div>
+                    <div id="redline"></div>
+                    <div id="bluelines"></div>
+
+                    <form onsubmit="return sendTask(); return false;">
+                        <label id="idk" for="taskd">Task Description:</label><br>
+                        <textarea id="taskd" name="taskd" placeholder="Insert text here." required></textarea>
+
+                        <div id="datetime">
+                            <label for="date">Deadline Date:</label>
+                            <input type="date" id="date" name="date"
+                                value=""
+                                min="2021-01-01" max="2022-12-31" required>
+
+                            <label for="time">Deadline Time:</label>
+                            <input type="time" id="time" name="time"
+                                value="" required>
+                        </div>
+
+                        <button type="submit" id="submit" value="Submit">Submit</button>
+                        <button type="reset" value="Reset">Reset</button>
+                    </form>
+
+                </div>
+                <div id="noteinput" class="noteinput"><!--
+                    <div id="note" class="note">
+                        <img id="img1" src="images/1.png">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-remove"></span>
+                          </a>
+                        <div id="notetext">AAA</div>
+                        <div id="notedate">BBB</div>
+                        <div id="notetime">CCC</div>
+                        <div id="fold"></div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
